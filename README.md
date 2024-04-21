@@ -7,12 +7,13 @@ Low VRAM Stable Diffusion Workflows
 * Upscale, Automatic Hand/Face inpainting (SAM+YOLOv)
 * Fits comfortably within one 1080p screen
 * View Switching - `~1234` Keys navigate to important settings
+* Full Screen Preview
 * Reliable on 4GB VRAM
 
 ![∞ a screenshot of a comfyui workflow and a generated image](https://github.com/exdysa/comfyui-workflows/assets/91800957/f61b44b1-1c54-4084-97de-e66cd6e94d69)
 
 <details>
-  <summary>Required custom nodes :</summary>
+  <summary> Expand for list of required custom nodes: </summary>
   
   - [BlenderNeko ADV_CLIP_emb](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb) - weight control for prompts
   - [ ltdrdata Inspire](https://github.com/ltdrdata/ComfyUI-Inspire-Pack) and [Impact](https://github.com/ltdrdata/ComfyUI-Impact-Pack) - detailers, toggles, latent dimensions export, globalsampler, image list
