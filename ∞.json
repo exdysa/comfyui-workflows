@@ -1,6 +1,6 @@
 {
   "last_node_id": 912,
-  "last_link_id": 7223,
+  "last_link_id": 7245,
   "nodes": [
     {
       "id": 346,
@@ -77,12 +77,13 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 7201
+          "link": 7240
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 7202
+          "link": 7244,
+          "slot_index": 5
         },
         {
           "name": "bbox_detector",
@@ -256,7 +257,7 @@
         "Run widget replace on values": false
       },
       "widgets_values": [
-        302917819475836,
+        1118392086046305,
         "randomize"
       ]
     },
@@ -322,7 +323,7 @@
         {
           "name": "+",
           "type": "STRING",
-          "link": 7103,
+          "link": 7228,
           "widget": {
             "name": "+"
           }
@@ -330,7 +331,7 @@
         {
           "name": "-",
           "type": "STRING",
-          "link": 7164,
+          "link": 7227,
           "widget": {
             "name": "-"
           }
@@ -573,9 +574,9 @@
           "name": "+",
           "type": "CONDITIONING",
           "links": [
-            7201,
-            7203,
-            7217
+            7240,
+            7241,
+            7242
           ],
           "shape": 3,
           "slot_index": 2
@@ -584,9 +585,9 @@
           "name": "-",
           "type": "CONDITIONING",
           "links": [
-            7202,
-            7204,
-            7216
+            7243,
+            7244,
+            7245
           ],
           "shape": 3,
           "slot_index": 3
@@ -883,12 +884,12 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 7217
+          "link": 7242
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 7216
+          "link": 7243
         },
         {
           "name": "latent",
@@ -1246,9 +1247,8 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            7164,
-            7167,
-            7168
+            7226,
+            7227
           ],
           "slot_index": 0,
           "widget": {
@@ -1272,10 +1272,10 @@
         220,
         30
       ],
-      "size": [
-        210,
-        320
-      ],
+      "size": {
+        "0": 210,
+        "1": 320
+      },
       "flags": {
         "pinned": true,
         "collapsed": false
@@ -1305,7 +1305,8 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            7103
+            7225,
+            7228
           ],
           "shape": 3,
           "slot_index": 0
@@ -1320,8 +1321,7 @@
         "yes",
         "𝌺𝌵䷱𝍖䷀, coming down from the mountainside, nvinkpunk\n",
         "embedding:ng_deepnegative_v1_75t, embedding:bad-hands-5, embedding:EasyNegativeV2,  ",
-        "embedding:BadDream, embedding:ng_deepnegative_v1_75t, ",
-        "𝌺𝌵䷱𝍖䷀, coming down from the mountainside, nvinkpunk\n"
+        "embedding:BadDream, embedding:ng_deepnegative_v1_75t, "
       ]
     },
     {
@@ -1331,10 +1331,10 @@
         1320,
         30
       ],
-      "size": [
-        210,
-        110
-      ],
+      "size": {
+        "0": 210,
+        "1": 110
+      },
       "flags": {
         "collapsed": false,
         "pinned": false
@@ -1374,10 +1374,10 @@
         1320,
         460
       ],
-      "size": [
-        210,
-        250
-      ],
+      "size": {
+        "0": 210,
+        "1": 250
+      },
       "flags": {
         "collapsed": false,
         "pinned": false
@@ -1403,10 +1403,10 @@
         1320,
         750
       ],
-      "size": [
-        210,
-        250
-      ],
+      "size": {
+        "0": 210,
+        "1": 250
+      },
       "flags": {
         "pinned": false,
         "collapsed": false
@@ -1421,6 +1421,188 @@
         }
       ],
       "title": "Detailer2",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 338,
+      "type": "SDPromptSaver",
+      "pos": [
+        1100,
+        30
+      ],
+      "size": {
+        "0": 210,
+        "1": 810
+      },
+      "flags": {
+        "pinned": true,
+        "collapsed": false
+      },
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7153
+        },
+        {
+          "name": "lora_name",
+          "type": "*",
+          "link": null,
+          "slot_index": 1
+        },
+        {
+          "name": "model_name",
+          "type": "COMBO",
+          "link": 6340,
+          "widget": {
+            "name": "model_name"
+          },
+          "slot_index": 2
+        },
+        {
+          "name": "steps",
+          "type": "INT",
+          "link": 7002,
+          "widget": {
+            "name": "steps"
+          }
+        },
+        {
+          "name": "cfg",
+          "type": "FLOAT",
+          "link": 7007,
+          "widget": {
+            "name": "cfg"
+          }
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 7225,
+          "widget": {
+            "name": "positive"
+          }
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 7226,
+          "widget": {
+            "name": "negative"
+          }
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 6808,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 6807,
+          "widget": {
+            "name": "height"
+          }
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "link": 6120,
+          "widget": {
+            "name": "seed"
+          },
+          "slot_index": 11
+        },
+        {
+          "name": "vae_name",
+          "type": "COMBO",
+          "link": 7108,
+          "widget": {
+            "name": "vae_name"
+          },
+          "slot_index": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FILENAME",
+          "type": "STRING",
+          "links": [],
+          "shape": 3
+        },
+        {
+          "name": "FILE_PATH",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "METADATA",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SDPromptSaver"
+      },
+      "widgets_values": [
+        "%counter_%seed_%steps_%cfg_%sampler_%scheduler_%model",
+        "%date",
+        "abstracts\\Inkpunk-Diffusion-v2.safetensors",
+        "kl-f8-anime.ckpt",
+        1118392086046305,
+        "randomize",
+        20,
+        8,
+        "dpmpp_2m",
+        "karras",
+        1,
+        1,
+        "embedding:BadDream, embedding:UnrealisticDream, \nembedding:EasyNegativeV2, embedding:ng_deepnegative_v1_75t, ",
+        "embedding:BadDream, embedding:UnrealisticDream, \nembedding:EasyNegativeV2, embedding:ng_deepnegative_v1_75t, ",
+        "png",
+        true,
+        true,
+        false,
+        100,
+        "%m",
+        "%H%M",
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 909,
+      "type": "PreviewImage",
+      "pos": [
+        1320,
+        180
+      ],
+      "size": [
+        210,
+        250
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7178
+        }
+      ],
+      "title": "Original",
       "properties": {
         "Node name for S&R": "PreviewImage"
       }
@@ -1466,12 +1648,12 @@
         {
           "name": "positive",
           "type": "CONDITIONING",
-          "link": 7203
+          "link": 7241
         },
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": 7204
+          "link": 7245
         },
         {
           "name": "bbox_detector",
@@ -1608,188 +1790,6 @@
         false,
         20
       ]
-    },
-    {
-      "id": 338,
-      "type": "SDPromptSaver",
-      "pos": [
-        1100,
-        30
-      ],
-      "size": [
-        210,
-        810
-      ],
-      "flags": {
-        "pinned": true,
-        "collapsed": false
-      },
-      "order": 24,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 7153
-        },
-        {
-          "name": "lora_name",
-          "type": "*",
-          "link": null,
-          "slot_index": 1
-        },
-        {
-          "name": "model_name",
-          "type": "COMBO",
-          "link": 6340,
-          "widget": {
-            "name": "model_name"
-          },
-          "slot_index": 2
-        },
-        {
-          "name": "steps",
-          "type": "INT",
-          "link": 7002,
-          "widget": {
-            "name": "steps"
-          }
-        },
-        {
-          "name": "cfg",
-          "type": "FLOAT",
-          "link": 7007,
-          "widget": {
-            "name": "cfg"
-          }
-        },
-        {
-          "name": "positive",
-          "type": "STRING",
-          "link": 7167,
-          "widget": {
-            "name": "positive"
-          }
-        },
-        {
-          "name": "negative",
-          "type": "STRING",
-          "link": 7168,
-          "widget": {
-            "name": "negative"
-          }
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "link": 6808,
-          "widget": {
-            "name": "width"
-          }
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "link": 6807,
-          "widget": {
-            "name": "height"
-          }
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "link": 6120,
-          "widget": {
-            "name": "seed"
-          },
-          "slot_index": 11
-        },
-        {
-          "name": "vae_name",
-          "type": "COMBO",
-          "link": 7108,
-          "widget": {
-            "name": "vae_name"
-          },
-          "slot_index": 10
-        }
-      ],
-      "outputs": [
-        {
-          "name": "FILENAME",
-          "type": "STRING",
-          "links": [],
-          "shape": 3
-        },
-        {
-          "name": "FILE_PATH",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "METADATA",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SDPromptSaver"
-      },
-      "widgets_values": [
-        "%counter_%seed_%steps_%cfg_%sampler_%scheduler_%model",
-        "%date",
-        "abstracts\\Inkpunk-Diffusion-v2.safetensors",
-        "kl-f8-anime.ckpt",
-        1118392086046305,
-        "randomize",
-        20,
-        8,
-        "dpmpp_2m",
-        "karras",
-        1,
-        1,
-        "embedding:BadDream, embedding:UnrealisticDream, \nembedding:EasyNegativeV2, embedding:ng_deepnegative_v1_75t, ",
-        "embedding:BadDream, embedding:UnrealisticDream, \nembedding:EasyNegativeV2, embedding:ng_deepnegative_v1_75t, ",
-        "png",
-        true,
-        true,
-        false,
-        100,
-        "%m",
-        "%H%M",
-        false,
-        ""
-      ]
-    },
-    {
-      "id": 909,
-      "type": "PreviewImage",
-      "pos": [
-        1320,
-        180
-      ],
-      "size": [
-        210,
-        240
-      ],
-      "flags": {
-        "pinned": false
-      },
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 7178
-        }
-      ],
-      "title": "Original",
-      "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
     }
   ],
   "links": [
@@ -2074,14 +2074,6 @@
       "LATENT"
     ],
     [
-      7103,
-      782,
-      0,
-      622,
-      1,
-      "STRING"
-    ],
-    [
       7106,
       751,
       0,
@@ -2120,30 +2112,6 @@
       338,
       0,
       "IMAGE"
-    ],
-    [
-      7164,
-      780,
-      0,
-      622,
-      2,
-      "STRING"
-    ],
-    [
-      7167,
-      780,
-      0,
-      338,
-      5,
-      "STRING"
-    ],
-    [
-      7168,
-      780,
-      0,
-      338,
-      6,
-      "STRING"
     ],
     [
       7171,
@@ -2202,38 +2170,6 @@
       "COMBO"
     ],
     [
-      7201,
-      751,
-      2,
-      312,
-      4,
-      "CONDITIONING"
-    ],
-    [
-      7202,
-      751,
-      3,
-      312,
-      5,
-      "CONDITIONING"
-    ],
-    [
-      7203,
-      751,
-      2,
-      839,
-      4,
-      "CONDITIONING"
-    ],
-    [
-      7204,
-      751,
-      3,
-      839,
-      5,
-      "CONDITIONING"
-    ],
-    [
       7208,
       622,
       3,
@@ -2282,22 +2218,6 @@
       "STRING"
     ],
     [
-      7216,
-      751,
-      3,
-      848,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      7217,
-      751,
-      2,
-      848,
-      1,
-      "CONDITIONING"
-    ],
-    [
       7218,
       312,
       1,
@@ -2344,6 +2264,86 @@
       903,
       2,
       "IMAGE"
+    ],
+    [
+      7225,
+      782,
+      0,
+      338,
+      5,
+      "STRING"
+    ],
+    [
+      7226,
+      780,
+      0,
+      338,
+      6,
+      "STRING"
+    ],
+    [
+      7227,
+      780,
+      0,
+      622,
+      2,
+      "STRING"
+    ],
+    [
+      7228,
+      782,
+      0,
+      622,
+      1,
+      "STRING"
+    ],
+    [
+      7240,
+      751,
+      2,
+      312,
+      4,
+      "CONDITIONING"
+    ],
+    [
+      7241,
+      751,
+      2,
+      839,
+      4,
+      "CONDITIONING"
+    ],
+    [
+      7242,
+      751,
+      2,
+      848,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      7243,
+      751,
+      3,
+      848,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      7244,
+      751,
+      3,
+      312,
+      5,
+      "CONDITIONING"
+    ],
+    [
+      7245,
+      751,
+      3,
+      839,
+      5,
+      "CONDITIONING"
     ]
   ],
   "groups": [],
