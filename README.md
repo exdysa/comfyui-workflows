@@ -4,7 +4,7 @@ Low VRAM Stable Diffusion Workflows
 # [Infinity ( ∞ )](https://github.com/exdysa/comfyui-workflows/blob/main/%E2%88%9E.json)
 * for [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 * Stable Diffusion 1.5
-* Upscale, Automatic Hand/Face inpainting (SAM+YOLOv)
+* Upscale, Automatic Hand/Face inpainting
 * Fits comfortably within one 1080p screen
 * View Switching - `~1234` Keys navigate to important settings
 * Full Screen Preview
