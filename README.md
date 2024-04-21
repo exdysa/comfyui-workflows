@@ -1,7 +1,7 @@
 # comfyui-workflows
 Low VRAM Stable Diffusion Workflows
 
-# [Infinity ( ∞ )](https://github.com/exdysa/comfyui-workflows/blob/main/%E2%88%9E.json)
+# [infinity ( ∞ )](https://github.com/exdysa/comfyui-workflows/blob/main/%E2%88%9E.json)
 * for [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 * Stable Diffusion 1.5
 * Upscale, Automatic Hand/Face inpainting
