@@ -5,7 +5,7 @@ Low VRAM Stable Diffusion Workflows
 * for [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 * Stable Diffusion 1.5
 * Upscale, Automatic Hand/Face inpainting
-* Fits comfortably within one 1080p screen
+* Fits comfortably within one screen at 1080 resolution
 * View Switching - `~1234` Keys navigate to important settings
 * Full Screen Preview
 * Reliable on 4GB VRAM
