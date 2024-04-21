@@ -16,12 +16,11 @@ Low VRAM Stable Diffusion Workflows
 <details>
   <summary> Expand for list of required custom nodes: </summary>
   
-  - [BlenderNeko ADV_CLIP_emb](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb) - weight control for prompts
   - [ltdrdata Inspire](https://github.com/ltdrdata/ComfyUI-Inspire-Pack) and [Impact](https://github.com/ltdrdata/ComfyUI-Impact-Pack) - detailers, toggles, latent dimensions export, globalsampler, image list
-  - [pythongosssss Custom Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) string arranging
   - [rgthree comfy](https://github.com/rgthree/rgthree-comfy) - bookmarks, ksampler text output, model unloader
-  - [crystian Crystools](https://github.com/crystian/ComfyUI-Crystools) - smaller, groupable string primitives
+  - [pythongosssss Custom Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) string assembly
+  - [crystian Crystools](https://github.com/crystian/ComfyUI-Crystools) - small, groupable, multiline string primitives
+  - [BlenderNeko ADV_CLIP_emb](https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb) - weight control for prompts
   - [receyuki prompt-reader-node](https://github.com/receyuki/comfyui-prompt-reader-node) - encode metadata into images
   - [cg noise](https://github.com/chrisgoringe/cg-noise) - variation seed control
 </details>
-![]
