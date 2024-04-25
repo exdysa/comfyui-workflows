@@ -82,10 +82,7 @@
     "inputs": {
       "filename": "%counter_%seed_%steps_%cfg",
       "path": "%date",
-      "model_name": [
-        "1482",
-        1
-      ],
+      "model_name": "abstracts\\Inkpunk-Diffusion-v2.safetensors",
       "vae_name": [
         "1482",
         2
@@ -128,7 +125,7 @@
       "date_format": "%m",
       "time_format": "%H%M",
       "save_metadata_file": false,
-      "extra_info": "",
+      "extra_info": "˶𝞢⤬⫒ⵖsᐼ˶ ⠑⠭⠙⠽⠎⠁",
       "images": [
         "1495",
         0
@@ -137,13 +134,6 @@
     "class_type": "SDPromptSaver",
     "_meta": {
       "title": "SD Prompt Saver"
-    }
-  },
-  "575": {
-    "inputs": {},
-    "class_type": "Model Unloader",
-    "_meta": {
-      "title": "ModelUnloader"
     }
   },
   "839": {
@@ -229,7 +219,7 @@
     "inputs": {
       "category": "Angle of View",
       "preset": "#PRESET",
-      "text": ""
+      "text": "𝌺𝌵䷱𝍖䷀, coming down from the mountainside, nvinkpunk"
     },
     "class_type": "PromptBuilder //Inspire",
     "_meta": {
@@ -248,7 +238,7 @@
   },
   "1244": {
     "inputs": {
-      "string": "people, robot, product,"
+      "string": "embedding:ng_deepnegative_v1_75t, embedding:bad-hands-5, embedding:EasyNegativeV2,"
     },
     "class_type": "Primitive string multiline [Crystools]",
     "_meta": {
@@ -269,12 +259,8 @@
   },
   "1480": {
     "inputs": {
-      "any_1": [
-        "1608:0",
-        3
-      ],
       "any_2": [
-        "1608:1",
+        "1649:1",
         1
       ],
       "any_3": [
@@ -286,11 +272,11 @@
         0
       ],
       "any_5": [
-        "1608:10",
+        "1649:10",
         0
       ],
       "any_6": [
-        "1608:8",
+        "1649:8",
         2
       ]
     },
@@ -320,7 +306,7 @@
     },
     "class_type": "ImpactLatentInfo",
     "_meta": {
-      "title": "                    SIZE                   "
+      "title": "                SIZE                          "
     }
   },
   "1495": {
@@ -366,33 +352,33 @@
       "title": "🪛 Primitive string multiline"
     }
   },
-  "1608:0": {
+  "1649:0": {
     "inputs": {
-      "ckpt_name": "_\\forgottenmixTheNovelist_v10P.safetensors"
+      "ckpt_name": "abstracts\\Inkpunk-Diffusion-v2.safetensors"
     },
-    "class_type": "Checkpoint Loader w/Name (WLSH)",
+    "class_type": "CheckpointLoaderSimple",
     "_meta": {
-      "title": "Ckpt(WLSH)"
+      "title": "Load Checkpoint"
     }
   },
-  "1608:1": {
+  "1649:1": {
     "inputs": {
-      "vae_name": "kl-f8-anime.ckpt"
+      "vae_name": "vaeftmse840000emaP.ckpt"
     },
     "class_type": "vae_loader",
     "_meta": {
       "title": "VAE Loader With Name"
     }
   },
-  "1608:2": {
+  "1649:2": {
     "inputs": {
       "cond": true,
       "tt_value": [
-        "1608:1",
+        "1649:1",
         0
       ],
       "ff_value": [
-        "1608:0",
+        "1649:0",
         2
       ]
     },
@@ -401,11 +387,11 @@
       "title": "ImpactConditionalBranch"
     }
   },
-  "1608:3": {
+  "1649:3": {
     "inputs": {
       "stop_at_clip_layer": -2,
       "clip": [
-        "1608:0",
+        "1649:0",
         1
       ]
     },
@@ -414,16 +400,16 @@
       "title": "CLIP Set Last Layer"
     }
   },
-  "1608:4": {
+  "1649:4": {
     "inputs": {
-      "seed": 819118277048526
+      "seed": 309352596041623
     },
     "class_type": "CR Seed",
     "_meta": {
       "title": "Seed"
     }
   },
-  "1608:5": {
+  "1649:5": {
     "inputs": {
       "text": [
         "957",
@@ -432,7 +418,7 @@
       "token_normalization": "none",
       "weight_interpretation": "A1111",
       "clip": [
-        "1608:3",
+        "1649:3",
         0
       ]
     },
@@ -441,7 +427,7 @@
       "title": "CLIP Text Encode (Adv) +"
     }
   },
-  "1608:6": {
+  "1649:6": {
     "inputs": {
       "text": [
         "1244",
@@ -450,7 +436,7 @@
       "token_normalization": "none",
       "weight_interpretation": "A1111",
       "clip": [
-        "1608:3",
+        "1649:3",
         0
       ]
     },
@@ -459,7 +445,7 @@
       "title": "CLIP Text Encode (Adv) -"
     }
   },
-  "1608:7": {
+  "1649:7": {
     "inputs": {
       "steps_total": 25,
       "refiner_step": 10,
@@ -472,11 +458,11 @@
       "title": "KSampler Config (rgthree)"
     }
   },
-  "1608:8": {
+  "1649:8": {
     "inputs": {
       "width": 910,
       "height": 768,
-      "aspect_ratio": "custom",
+      "aspect_ratio": "2:1 cinema 1024x512",
       "swap_dimensions": "Off",
       "upscale_factor": 0.5,
       "batch_size": 1
@@ -486,7 +472,7 @@
       "title": "🔳 CR SD1.5 Aspect Ratio"
     }
   },
-  "1608:9": {
+  "1649:9": {
     "inputs": {
       "model_name": "sam_vit_b_01ec64.pth",
       "device_mode": "Prefer GPU"
@@ -496,7 +482,7 @@
       "title": "SAMLoader (Impact)"
     }
   },
-  "1608:10": {
+  "1649:10": {
     "inputs": {
       "model_name": "RealESRGAN_x2plus.pth"
     },
@@ -512,23 +498,23 @@
         0
       ],
       "model": [
-        "1608:0",
+        "1649:0",
         0
       ],
       "pos": [
-        "1608:5",
+        "1649:5",
         0
       ],
       "neg": [
-        "1608:6",
+        "1649:6",
         0
       ],
       "latent": [
-        "1608:8",
+        "1649:8",
         4
       ],
       "vae": [
-        "1608:2",
+        "1649:2",
         0
       ]
     },
@@ -540,19 +526,19 @@
   "1424:1": {
     "inputs": {
       "any_1": [
-        "1608:7",
+        "1649:7",
         0
       ],
       "any_2": [
-        "1608:7",
+        "1649:7",
         1
       ],
       "any_3": [
-        "1608:7",
+        "1649:7",
         2
       ],
       "any_4": [
-        "1608:9",
+        "1649:9",
         0
       ],
       "any_5": [
@@ -637,7 +623,7 @@
   },
   "1467:0": {
     "inputs": {
-      "seed": 453850036115905,
+      "seed": 320423036694399,
       "steps": [
         "1426:1",
         1
@@ -652,7 +638,7 @@
       "noise_mode": "GPU(=A1111)",
       "batch_seed_mode": "comfy",
       "variation_seed": [
-        "1608:4",
+        "1649:4",
         0
       ],
       "variation_strength": 0.01,
