@@ -28,7 +28,5 @@ Low VRAM Stable Diffusion Workflows
   - [receyuki prompt-reader-node](https://github.com/receyuki/comfyui-prompt-reader-node) - encode metadata into images
   - [pythongosssss Custom Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) custom colors
   - [cg noise](https://github.com/chrisgoringe/cg-noise) - variation seed control
-  - [wlsh nodes](https://github.com/wallish77/wlsh_nodes) - checkpoint loader
   - [dragos nodes](https://github.com/drago87/ComfyUI_Dragos_Nodes) - vae loader
-  - [model unload](https://github.com/LarryJane491/ComfyUI-ModelUnloader) - model unload
 </details>
