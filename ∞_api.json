@@ -1,0 +1,780 @@
+{
+  "312": {
+    "inputs": {
+      "guide_size": 384,
+      "guide_size_for": true,
+      "max_size": 512,
+      "seed": 338430204620350,
+      "steps": [
+        "1427:1",
+        2
+      ],
+      "cfg": [
+        "1427:1",
+        3
+      ],
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 0.7,
+      "feather": 5,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 0,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7000000000000001,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": [
+        "1427:1",
+        6
+      ],
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 10,
+      "image": [
+        "1467:1",
+        0
+      ],
+      "model": [
+        "1427:0",
+        1
+      ],
+      "clip": [
+        "1427:0",
+        6
+      ],
+      "vae": [
+        "1427:0",
+        5
+      ],
+      "positive": [
+        "1427:0",
+        2
+      ],
+      "negative": [
+        "1427:0",
+        3
+      ],
+      "bbox_detector": [
+        "1427:2",
+        0
+      ],
+      "sam_model_opt": [
+        "1427:1",
+        4
+      ],
+      "segm_detector_opt": [
+        "1427:3",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer 1"
+    }
+  },
+  "338": {
+    "inputs": {
+      "filename": "%counter_%seed_%steps_%cfg",
+      "path": "%date",
+      "model_name": [
+        "1482",
+        1
+      ],
+      "vae_name": [
+        "1482",
+        2
+      ],
+      "seed": [
+        "1428:0",
+        9
+      ],
+      "steps": [
+        "1421",
+        1
+      ],
+      "cfg": [
+        "1421",
+        3
+      ],
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "width": [
+        "1490",
+        2
+      ],
+      "height": [
+        "1490",
+        1
+      ],
+      "positive": [
+        "1482",
+        3
+      ],
+      "negative": [
+        "1482",
+        4
+      ],
+      "extension": "png",
+      "calculate_hash": true,
+      "resource_hash": true,
+      "lossless_webp": false,
+      "jpg_webp_quality": 100,
+      "date_format": "%m",
+      "time_format": "%H%M",
+      "save_metadata_file": false,
+      "extra_info": "",
+      "images": [
+        "1495",
+        0
+      ]
+    },
+    "class_type": "SDPromptSaver",
+    "_meta": {
+      "title": "SD Prompt Saver"
+    }
+  },
+  "575": {
+    "inputs": {},
+    "class_type": "Model Unloader",
+    "_meta": {
+      "title": "ModelUnloader"
+    }
+  },
+  "839": {
+    "inputs": {
+      "guide_size": 384,
+      "guide_size_for": true,
+      "max_size": 512,
+      "seed": 828427739859455,
+      "steps": [
+        "1428:1",
+        2
+      ],
+      "cfg": [
+        "1428:1",
+        3
+      ],
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 0.7000000000000001,
+      "feather": 7,
+      "noise_mask": true,
+      "force_inpaint": true,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 0,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7000000000000001,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": [
+        "1428:1",
+        5
+      ],
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 10,
+      "image": [
+        "312",
+        0
+      ],
+      "model": [
+        "1428:0",
+        1
+      ],
+      "clip": [
+        "1428:0",
+        6
+      ],
+      "vae": [
+        "1428:0",
+        5
+      ],
+      "positive": [
+        "1428:0",
+        2
+      ],
+      "negative": [
+        "1428:0",
+        3
+      ],
+      "bbox_detector": [
+        "1428:2",
+        0
+      ],
+      "sam_model_opt": [
+        "1428:1",
+        4
+      ],
+      "segm_detector_opt": [
+        "1428:3",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer 2"
+    }
+  },
+  "957": {
+    "inputs": {
+      "category": "Angle of View",
+      "preset": "#PRESET",
+      "text": ""
+    },
+    "class_type": "PromptBuilder //Inspire",
+    "_meta": {
+      "title": "Prompt Builder (Inspire)"
+    }
+  },
+  "1195": {
+    "inputs": {
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    "class_type": "GlobalSampler //Inspire",
+    "_meta": {
+      "title": "Global Sampler (Inspire)"
+    }
+  },
+  "1244": {
+    "inputs": {
+      "string": "people, robot, product,"
+    },
+    "class_type": "Primitive string multiline [Crystools]",
+    "_meta": {
+      "title": "Negative"
+    }
+  },
+  "1421": {
+    "inputs": {
+      "CPipeAny": [
+        "1428:1",
+        0
+      ]
+    },
+    "class_type": "Pipe from any [Crystools]",
+    "_meta": {
+      "title": "|S1"
+    }
+  },
+  "1480": {
+    "inputs": {
+      "any_1": [
+        "1608:0",
+        3
+      ],
+      "any_2": [
+        "1608:1",
+        1
+      ],
+      "any_3": [
+        "957",
+        0
+      ],
+      "any_4": [
+        "1244",
+        0
+      ],
+      "any_5": [
+        "1608:10",
+        0
+      ],
+      "any_6": [
+        "1608:8",
+        2
+      ]
+    },
+    "class_type": "Pipe to/edit any [Crystools]",
+    "_meta": {
+      "title": "|I2"
+    }
+  },
+  "1482": {
+    "inputs": {
+      "CPipeAny": [
+        "1480",
+        0
+      ]
+    },
+    "class_type": "Pipe from any [Crystools]",
+    "_meta": {
+      "title": "|S2"
+    }
+  },
+  "1490": {
+    "inputs": {
+      "value": [
+        "1428:0",
+        4
+      ]
+    },
+    "class_type": "ImpactLatentInfo",
+    "_meta": {
+      "title": "                    SIZE                   "
+    }
+  },
+  "1495": {
+    "inputs": {
+      "upscale_model": [
+        "1482",
+        5
+      ],
+      "image": [
+        "839",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "Image Upscale"
+    }
+  },
+  "1507": {
+    "inputs": {
+      "seed": -1
+    },
+    "class_type": "Seed (rgthree)",
+    "_meta": {
+      "title": "Seed (rgthree)"
+    }
+  },
+  "1569:0": {
+    "inputs": {
+      "string": ""
+    },
+    "class_type": "Primitive string multiline [Crystools]",
+    "_meta": {
+      "title": "🪛 Primitive string multiline"
+    }
+  },
+  "1569:1": {
+    "inputs": {
+      "string": ""
+    },
+    "class_type": "Primitive string multiline [Crystools]",
+    "_meta": {
+      "title": "🪛 Primitive string multiline"
+    }
+  },
+  "1608:0": {
+    "inputs": {
+      "ckpt_name": "_\\forgottenmixTheNovelist_v10P.safetensors"
+    },
+    "class_type": "Checkpoint Loader w/Name (WLSH)",
+    "_meta": {
+      "title": "Ckpt(WLSH)"
+    }
+  },
+  "1608:1": {
+    "inputs": {
+      "vae_name": "kl-f8-anime.ckpt"
+    },
+    "class_type": "vae_loader",
+    "_meta": {
+      "title": "VAE Loader With Name"
+    }
+  },
+  "1608:2": {
+    "inputs": {
+      "cond": true,
+      "tt_value": [
+        "1608:1",
+        0
+      ],
+      "ff_value": [
+        "1608:0",
+        2
+      ]
+    },
+    "class_type": "ImpactConditionalBranch",
+    "_meta": {
+      "title": "ImpactConditionalBranch"
+    }
+  },
+  "1608:3": {
+    "inputs": {
+      "stop_at_clip_layer": -2,
+      "clip": [
+        "1608:0",
+        1
+      ]
+    },
+    "class_type": "CLIPSetLastLayer",
+    "_meta": {
+      "title": "CLIP Set Last Layer"
+    }
+  },
+  "1608:4": {
+    "inputs": {
+      "seed": 819118277048526
+    },
+    "class_type": "CR Seed",
+    "_meta": {
+      "title": "Seed"
+    }
+  },
+  "1608:5": {
+    "inputs": {
+      "text": [
+        "957",
+        0
+      ],
+      "token_normalization": "none",
+      "weight_interpretation": "A1111",
+      "clip": [
+        "1608:3",
+        0
+      ]
+    },
+    "class_type": "BNK_CLIPTextEncodeAdvanced",
+    "_meta": {
+      "title": "CLIP Text Encode (Adv) +"
+    }
+  },
+  "1608:6": {
+    "inputs": {
+      "text": [
+        "1244",
+        0
+      ],
+      "token_normalization": "none",
+      "weight_interpretation": "A1111",
+      "clip": [
+        "1608:3",
+        0
+      ]
+    },
+    "class_type": "BNK_CLIPTextEncodeAdvanced",
+    "_meta": {
+      "title": "CLIP Text Encode (Adv) -"
+    }
+  },
+  "1608:7": {
+    "inputs": {
+      "steps_total": 25,
+      "refiner_step": 10,
+      "cfg": 7,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    "class_type": "KSampler Config (rgthree)",
+    "_meta": {
+      "title": "KSampler Config (rgthree)"
+    }
+  },
+  "1608:8": {
+    "inputs": {
+      "width": 910,
+      "height": 768,
+      "aspect_ratio": "custom",
+      "swap_dimensions": "Off",
+      "upscale_factor": 0.5,
+      "batch_size": 1
+    },
+    "class_type": "CR SD1.5 Aspect Ratio",
+    "_meta": {
+      "title": "🔳 CR SD1.5 Aspect Ratio"
+    }
+  },
+  "1608:9": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "Prefer GPU"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "1608:10": {
+    "inputs": {
+      "model_name": "RealESRGAN_x2plus.pth"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "Load Upscale Model"
+    }
+  },
+  "1424:0": {
+    "inputs": {
+      "seed": [
+        "1507",
+        0
+      ],
+      "model": [
+        "1608:0",
+        0
+      ],
+      "pos": [
+        "1608:5",
+        0
+      ],
+      "neg": [
+        "1608:6",
+        0
+      ],
+      "latent": [
+        "1608:8",
+        4
+      ],
+      "vae": [
+        "1608:2",
+        0
+      ]
+    },
+    "class_type": "CR Module Pipe Loader",
+    "_meta": {
+      "title": "CR|"
+    }
+  },
+  "1424:1": {
+    "inputs": {
+      "any_1": [
+        "1608:7",
+        0
+      ],
+      "any_2": [
+        "1608:7",
+        1
+      ],
+      "any_3": [
+        "1608:7",
+        2
+      ],
+      "any_4": [
+        "1608:9",
+        0
+      ],
+      "any_5": [
+        "1569:1",
+        0
+      ],
+      "any_6": [
+        "1569:0",
+        0
+      ]
+    },
+    "class_type": "Pipe to/edit any [Crystools]",
+    "_meta": {
+      "title": "|Set"
+    }
+  },
+  "1426:0": {
+    "inputs": {
+      "pipe": [
+        "1424:0",
+        0
+      ]
+    },
+    "class_type": "CR Module Input",
+    "_meta": {
+      "title": "CR|"
+    }
+  },
+  "1426:1": {
+    "inputs": {
+      "CPipeAny": [
+        "1424:1",
+        0
+      ]
+    },
+    "class_type": "Pipe from any [Crystools]",
+    "_meta": {
+      "title": "|Set"
+    }
+  },
+  "1427:0": {
+    "inputs": {
+      "pipe": [
+        "1424:0",
+        0
+      ]
+    },
+    "class_type": "CR Module Input",
+    "_meta": {
+      "title": "CR|"
+    }
+  },
+  "1427:1": {
+    "inputs": {
+      "CPipeAny": [
+        "1426:1",
+        0
+      ]
+    },
+    "class_type": "Pipe from any [Crystools]",
+    "_meta": {
+      "title": "|Set"
+    }
+  },
+  "1427:2": {
+    "inputs": {
+      "model_name": "bbox/hand_yolov8n.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "BBOX"
+    }
+  },
+  "1427:3": {
+    "inputs": {
+      "model_name": "segm/deepfashion2_yolov8s-seg.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "SEGM"
+    }
+  },
+  "1467:0": {
+    "inputs": {
+      "seed": 453850036115905,
+      "steps": [
+        "1426:1",
+        1
+      ],
+      "cfg": [
+        "1426:1",
+        3
+      ],
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1,
+      "noise_mode": "GPU(=A1111)",
+      "batch_seed_mode": "comfy",
+      "variation_seed": [
+        "1608:4",
+        0
+      ],
+      "variation_strength": 0.01,
+      "model": [
+        "1426:0",
+        1
+      ],
+      "positive": [
+        "1426:0",
+        2
+      ],
+      "negative": [
+        "1426:0",
+        3
+      ],
+      "latent_image": [
+        "1426:0",
+        4
+      ]
+    },
+    "class_type": "KSampler //Inspire",
+    "_meta": {
+      "title": "KSampler (inspire)"
+    }
+  },
+  "1467:1": {
+    "inputs": {
+      "tiled": false,
+      "circular": false,
+      "samples": [
+        "1467:0",
+        0
+      ],
+      "vae": [
+        "1426:0",
+        5
+      ]
+    },
+    "class_type": "CR VAE Decode",
+    "_meta": {
+      "title": "CRVAE"
+    }
+  },
+  "1428:0": {
+    "inputs": {
+      "pipe": [
+        "1427:0",
+        0
+      ]
+    },
+    "class_type": "CR Module Input",
+    "_meta": {
+      "title": "CR|"
+    }
+  },
+  "1428:1": {
+    "inputs": {
+      "CPipeAny": [
+        "1427:1",
+        0
+      ]
+    },
+    "class_type": "Pipe from any [Crystools]",
+    "_meta": {
+      "title": "|Set"
+    }
+  },
+  "1428:2": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8n_v2.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "BBOX"
+    }
+  },
+  "1428:3": {
+    "inputs": {
+      "model_name": "segm/person_yolov8n-seg.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "SEGM"
+    }
+  },
+  "1498:0": {
+    "inputs": {
+      "input_image": [
+        "312",
+        0
+      ],
+      "mask_1": [
+        "312",
+        3
+      ],
+      "mask_2": [
+        "839",
+        3
+      ]
+    },
+    "class_type": "CombineSegMasks",
+    "_meta": {
+      "title": "CombineSegMasks"
+    }
+  },
+  "1498:1": {
+    "inputs": {
+      "mask_opacity": 0.5,
+      "mask_color": "0, 255, 255",
+      "pass_through": false,
+      "image": [
+        "839",
+        0
+      ],
+      "mask": [
+        "1498:0",
+        0
+      ]
+    },
+    "class_type": "ImageAndMaskPreview",
+    "_meta": {
+      "title": "Image & Mask Preview"
+    }
+  }
+}
