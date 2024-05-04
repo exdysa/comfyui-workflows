@@ -1,234 +1,68 @@
 {
-  "312": {
+  "46": {
     "inputs": {
-      "guide_size": 384,
-      "guide_size_for": true,
-      "max_size": 512,
-      "seed": 338430204620350,
-      "steps": [
-        "1427:1",
-        2
-      ],
-      "cfg": [
-        "1427:1",
-        3
-      ],
-      "sampler_name": "dpmpp_2m",
-      "scheduler": "karras",
-      "denoise": 0.7,
-      "feather": 5,
-      "noise_mask": true,
-      "force_inpaint": true,
-      "bbox_threshold": 0.5,
-      "bbox_dilation": 0,
-      "bbox_crop_factor": 3,
-      "sam_detection_hint": "center-1",
-      "sam_dilation": 0,
-      "sam_threshold": 0.93,
-      "sam_bbox_expansion": 0,
-      "sam_mask_hint_threshold": 0.7000000000000001,
-      "sam_mask_hint_use_negative": "False",
-      "drop_size": 10,
-      "wildcard": [
-        "1427:1",
-        6
-      ],
-      "cycle": 1,
-      "inpaint_model": false,
-      "noise_mask_feather": 10,
-      "image": [
-        "1467:1",
-        0
-      ],
-      "model": [
-        "1427:0",
-        1
-      ],
-      "clip": [
-        "1427:0",
-        6
-      ],
-      "vae": [
-        "1427:0",
-        5
-      ],
-      "positive": [
-        "1427:0",
-        2
-      ],
-      "negative": [
-        "1427:0",
-        3
-      ],
-      "bbox_detector": [
-        "1427:2",
-        0
-      ],
-      "sam_model_opt": [
-        "1427:1",
-        4
-      ],
-      "segm_detector_opt": [
-        "1427:3",
-        1
-      ]
-    },
-    "class_type": "FaceDetailer",
-    "_meta": {
-      "title": "FaceDetailer 1"
-    }
-  },
-  "338": {
-    "inputs": {
-      "filename": "%counter_%seed_%steps_%cfg",
+      "filename": "%counter_%seed_%steps_%cfg_%time",
       "path": "%date",
-      "model_name": "abstracts\\Inkpunk-Diffusion-v2.safetensors",
+      "model_name": [
+        "549",
+        0
+      ],
       "vae_name": [
-        "1482",
-        2
+        "551",
+        0
       ],
       "seed": [
-        "1428:0",
-        9
+        "660",
+        0
       ],
       "steps": [
-        "1421",
-        1
+        "664",
+        8
       ],
       "cfg": [
-        "1421",
-        3
+        "664",
+        10
       ],
-      "sampler_name": "dpmpp_2m",
-      "scheduler": "karras",
+      "sampler_name": "euler_dy",
+      "scheduler": "normal",
       "width": [
-        "1490",
-        2
+        "664",
+        13
       ],
       "height": [
-        "1490",
-        1
+        "664",
+        14
       ],
       "positive": [
-        "1482",
-        3
+        "664",
+        11
       ],
       "negative": [
-        "1482",
-        4
+        "664",
+        12
       ],
       "extension": "png",
-      "calculate_hash": true,
+      "calculate_hash": false,
       "resource_hash": true,
       "lossless_webp": false,
       "jpg_webp_quality": 100,
       "date_format": "%m",
-      "time_format": "%H%M",
+      "time_format": "%H%M%S",
       "save_metadata_file": false,
-      "extra_info": "",
+      "extra_info": "∞ ˶𝞢⤬⫒ⵖsᐼ˶ ⠑⠭⠙⠽⠎⠁",
       "images": [
-        "1495",
+        "240",
         0
       ]
     },
     "class_type": "SDPromptSaver",
     "_meta": {
-      "title": "SD Prompt Saver"
+      "title": "SD Prompt Saver          "
     }
   },
-  "839": {
+  "76": {
     "inputs": {
-      "guide_size": 384,
-      "guide_size_for": true,
-      "max_size": 512,
-      "seed": 828427739859455,
-      "steps": [
-        "1428:1",
-        2
-      ],
-      "cfg": [
-        "1428:1",
-        3
-      ],
-      "sampler_name": "dpmpp_2m",
-      "scheduler": "karras",
-      "denoise": 0.7000000000000001,
-      "feather": 7,
-      "noise_mask": true,
-      "force_inpaint": true,
-      "bbox_threshold": 0.5,
-      "bbox_dilation": 0,
-      "bbox_crop_factor": 3,
-      "sam_detection_hint": "center-1",
-      "sam_dilation": 0,
-      "sam_threshold": 0.93,
-      "sam_bbox_expansion": 0,
-      "sam_mask_hint_threshold": 0.7000000000000001,
-      "sam_mask_hint_use_negative": "False",
-      "drop_size": 10,
-      "wildcard": [
-        "1428:1",
-        5
-      ],
-      "cycle": 1,
-      "inpaint_model": false,
-      "noise_mask_feather": 10,
-      "image": [
-        "312",
-        0
-      ],
-      "model": [
-        "1428:0",
-        1
-      ],
-      "clip": [
-        "1428:0",
-        6
-      ],
-      "vae": [
-        "1428:0",
-        5
-      ],
-      "positive": [
-        "1428:0",
-        2
-      ],
-      "negative": [
-        "1428:0",
-        3
-      ],
-      "bbox_detector": [
-        "1428:2",
-        0
-      ],
-      "sam_model_opt": [
-        "1428:1",
-        4
-      ],
-      "segm_detector_opt": [
-        "1428:3",
-        1
-      ]
-    },
-    "class_type": "FaceDetailer",
-    "_meta": {
-      "title": "FaceDetailer 2"
-    }
-  },
-  "957": {
-    "inputs": {
-      "category": "Angle of View",
-      "preset": "#PRESET",
-      "text": "𝌺𝌵䷱𝍖䷀, coming down from the mountainside, nvinkpunk"
-    },
-    "class_type": "PromptBuilder //Inspire",
-    "_meta": {
-      "title": "Prompt Builder (Inspire)"
-    }
-  },
-  "1195": {
-    "inputs": {
-      "sampler_name": "dpmpp_2m",
+      "sampler_name": "euler_dy",
       "scheduler": "karras"
     },
     "class_type": "GlobalSampler //Inspire",
@@ -236,243 +70,487 @@
       "title": "Global Sampler (Inspire)"
     }
   },
-  "1244": {
+  "85": {
     "inputs": {
-      "string": "embedding:ng_deepnegative_v1_75t, embedding:bad-hands-5, embedding:EasyNegativeV2,"
-    },
-    "class_type": "Primitive string multiline [Crystools]",
-    "_meta": {
-      "title": "Negative"
-    }
-  },
-  "1421": {
-    "inputs": {
-      "CPipeAny": [
-        "1428:1",
+      "text_l": [
+        "708:1",
+        0
+      ],
+      "text_g": [
+        "708:1",
+        0
+      ],
+      "token_normalization": "none",
+      "weight_interpretation": "A1111",
+      "balance": 0.5,
+      "clip": [
+        "708:0",
         0
       ]
     },
-    "class_type": "Pipe from any [Crystools]",
+    "class_type": "BNK_CLIPTextEncodeSDXLAdvanced",
     "_meta": {
-      "title": "|S1"
+      "title": "CLIP XL+"
     }
   },
-  "1480": {
+  "86": {
     "inputs": {
-      "any_2": [
-        "1649:1",
-        1
-      ],
-      "any_3": [
-        "957",
-        0
-      ],
-      "any_4": [
-        "1244",
-        0
-      ],
-      "any_5": [
-        "1649:10",
-        0
-      ],
-      "any_6": [
-        "1649:8",
-        2
-      ]
-    },
-    "class_type": "Pipe to/edit any [Crystools]",
-    "_meta": {
-      "title": "|I2"
-    }
-  },
-  "1482": {
-    "inputs": {
-      "CPipeAny": [
-        "1480",
-        0
-      ]
-    },
-    "class_type": "Pipe from any [Crystools]",
-    "_meta": {
-      "title": "|S2"
-    }
-  },
-  "1490": {
-    "inputs": {
-      "value": [
-        "1428:0",
-        4
-      ]
-    },
-    "class_type": "ImpactLatentInfo",
-    "_meta": {
-      "title": "                SIZE                          "
-    }
-  },
-  "1495": {
-    "inputs": {
-      "upscale_model": [
-        "1482",
-        5
-      ],
-      "image": [
-        "839",
-        0
-      ]
-    },
-    "class_type": "ImageUpscaleWithModel",
-    "_meta": {
-      "title": "Image Upscale"
-    }
-  },
-  "1507": {
-    "inputs": {
-      "seed": -1
-    },
-    "class_type": "Seed (rgthree)",
-    "_meta": {
-      "title": "Seed (rgthree)"
-    }
-  },
-  "1569:0": {
-    "inputs": {
-      "string": ""
-    },
-    "class_type": "Primitive string multiline [Crystools]",
-    "_meta": {
-      "title": "🪛 Primitive string multiline"
-    }
-  },
-  "1569:1": {
-    "inputs": {
-      "string": ""
-    },
-    "class_type": "Primitive string multiline [Crystools]",
-    "_meta": {
-      "title": "🪛 Primitive string multiline"
-    }
-  },
-  "1649:0": {
-    "inputs": {
-      "ckpt_name": "abstracts\\Inkpunk-Diffusion-v2.safetensors"
-    },
-    "class_type": "CheckpointLoaderSimple",
-    "_meta": {
-      "title": "Load Checkpoint"
-    }
-  },
-  "1649:1": {
-    "inputs": {
-      "vae_name": "vaeftmse840000emaP.ckpt"
+      "vae_name": "xl\\sdxl.vae.fp16.fix.safetensors"
     },
     "class_type": "vae_loader",
     "_meta": {
-      "title": "VAE Loader With Name"
+      "title": "Alternate VAE"
     }
   },
-  "1649:2": {
+  "90": {
     "inputs": {
-      "cond": true,
-      "tt_value": [
-        "1649:1",
+      "category": "Angle of View",
+      "preset": "#PRESET",
+      "text": "<lora:xl\\vegart_pytorch_lora_weights.safetensors:2.0>, <lora:detail\\add-detail-xl.safetensors:1.0>, (Yayoi Kusama:1.0), in a living woods thick with mossy roots and fireflies magical energy rises as a pale-blue crane ghost wanders only in a reflection, (mirror recursion:1.4), surrealism, disorienting, moon, gently rippling water, upside-down,"
+    },
+    "class_type": "PromptBuilder //Inspire",
+    "_meta": {
+      "title": "Prompt Builder (Inspire)"
+    }
+  },
+  "129": {
+    "inputs": {
+      "ckpt_name": "xl\\segmind-vega.safetensors"
+    },
+    "class_type": "Checkpoint Loader w/Name (WLSH)",
+    "_meta": {
+      "title": "CkptLoader(WLSH)"
+    }
+  },
+  "206": {
+    "inputs": {
+      "add_noise": true,
+      "noise_seed": [
+        "660",
         0
       ],
-      "ff_value": [
-        "1649:0",
-        2
+      "steps": [
+        "664",
+        8
+      ],
+      "cfg": [
+        "664",
+        10
+      ],
+      "sampler_name": "euler_dy",
+      "scheduler": "karras",
+      "start_at_step": 0,
+      "end_at_step": [
+        "664",
+        8
+      ],
+      "noise_mode": "GPU(=A1111)",
+      "return_with_leftover_noise": false,
+      "batch_seed_mode": "incremental",
+      "variation_seed": 0,
+      "variation_strength": 0,
+      "model": [
+        "664",
+        1
+      ],
+      "positive": [
+        "664",
+        6
+      ],
+      "negative": [
+        "664",
+        7
+      ],
+      "latent_image": [
+        "664",
+        5
       ]
     },
-    "class_type": "ImpactConditionalBranch",
+    "class_type": "KSamplerAdvanced //Inspire",
     "_meta": {
-      "title": "ImpactConditionalBranch"
+      "title": "KSamplerAdv (inspire)"
     }
   },
-  "1649:3": {
+  "240": {
     "inputs": {
-      "stop_at_clip_layer": -2,
+      "upscale_model": "RealESRGAN_x4plus_anime_6B.pth",
+      "mode": "rescale",
+      "rescale_factor": [
+        "664",
+        15
+      ],
+      "resize_width": 1024,
+      "resampling_method": "lanczos",
+      "supersample": "false",
+      "rounding_modulus": 8,
+      "image": [
+        "707:2",
+        0
+      ]
+    },
+    "class_type": "CR Upscale Image",
+    "_meta": {
+      "title": "CR Upscale"
+    }
+  },
+  "295": {
+    "inputs": {
+      "mode": "always",
+      "volume": 0.5,
+      "file": "notify.mp3",
+      "any": [
+        "46",
+        0
+      ]
+    },
+    "class_type": "PlaySound|pysssss",
+    "_meta": {
+      "title": "PlaySound         🐍"
+    }
+  },
+  "430": {
+    "inputs": {
+      "guide_size": 376,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": [
+        "660",
+        0
+      ],
+      "steps": [
+        "664",
+        9
+      ],
+      "cfg": [
+        "664",
+        10
+      ],
+      "sampler_name": "euler_dy",
+      "scheduler": "normal",
+      "denoise": 0.5,
+      "feather": 4,
+      "noise_mask": false,
+      "force_inpaint": true,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 11,
+      "wildcard": [
+        "664",
+        16
+      ],
+      "cycle": 1,
+      "inpaint_model": true,
+      "noise_mask_feather": 19,
+      "image": [
+        "707:1",
+        0
+      ],
+      "model": [
+        "664",
+        1
+      ],
       "clip": [
-        "1649:0",
+        "664",
+        2
+      ],
+      "vae": [
+        "664",
+        4
+      ],
+      "positive": [
+        "664",
+        6
+      ],
+      "negative": [
+        "664",
+        7
+      ],
+      "bbox_detector": [
+        "664",
+        17
+      ],
+      "sam_model_opt": [
+        "664",
+        18
+      ],
+      "segm_detector_opt": [
+        "664",
+        19
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer"
+    }
+  },
+  "484": {
+    "inputs": {
+      "samples": [
+        "707:0",
+        0
+      ],
+      "vae": [
+        "664",
+        4
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "549": {
+    "inputs": {
+      "text": [
+        "129",
+        3
+      ]
+    },
+    "class_type": "CR String To Combo",
+    "_meta": {
+      "title": "ModelName"
+    }
+  },
+  "551": {
+    "inputs": {
+      "text": [
+        "86",
         1
       ]
     },
-    "class_type": "CLIPSetLastLayer",
+    "class_type": "CR String To Combo",
     "_meta": {
-      "title": "CLIP Set Last Layer"
+      "title": "VAENamer"
     }
   },
-  "1649:4": {
+  "582": {
     "inputs": {
-      "seed": 309352596041623
+      "text": ""
     },
-    "class_type": "CR Seed",
+    "class_type": "CR Text",
+    "_meta": {
+      "title": "FD Wildcard"
+    }
+  },
+  "590": {
+    "inputs": {
+      "text": [
+        "708:1",
+        0
+      ],
+      "token_normalization": "none",
+      "weight_interpretation": "comfy",
+      "clip": [
+        "708:0",
+        0
+      ]
+    },
+    "class_type": "BNK_CLIPTextEncodeAdvanced",
+    "_meta": {
+      "title": "CLIP 1.5+"
+    }
+  },
+  "660": {
+    "inputs": {
+      "val": "3853238821",
+      "min": 1000000000,
+      "max": 9999999999,
+      "batch_size": 1,
+      "mode": "keep",
+      "seed": -972680096396556,
+      "output": ""
+    },
+    "class_type": "0246.RandomInt",
     "_meta": {
       "title": "Seed"
     }
   },
-  "1649:5": {
+  "664": {
     "inputs": {
-      "text": [
-        "957",
+      "Profile": "∞",
+      "Nb Inputs": 19,
+      "Clean Inputs": null,
+      "* 01 - model": [
+        "129",
         0
       ],
-      "token_normalization": "none",
-      "weight_interpretation": "A1111",
-      "clip": [
-        "1649:3",
+      "* 02 - clip": [
+        "129",
+        1
+      ],
+      "* 04 - signal_opt": [
+        "712",
+        0
+      ],
+      "* 05 - latent": [
+        "595:1",
+        5
+      ],
+      "* 06 - signal_opt": [
+        "672",
+        0
+      ],
+      "* 07 - negative": [
+        "460:0",
+        1
+      ],
+      "* 08 - steps": [
+        "595:0",
+        0
+      ],
+      "* 09 - refiner_step": [
+        "595:0",
+        1
+      ],
+      "* 10 - cfg": [
+        "595:0",
+        2
+      ],
+      "* 11 - +": [
+        "708:1",
+        0
+      ],
+      "* 12 - negative_text": [
+        "460:0",
+        3
+      ],
+      "* 13 - width": [
+        "595:1",
+        0
+      ],
+      "* 14 - height": [
+        "595:1",
+        1
+      ],
+      "* 15 - upscale_factor": [
+        "595:1",
+        2
+      ],
+      "* 16 - text": [
+        "582",
+        0
+      ],
+      "* 17 - bbox_detector": [
+        "435:0",
+        0
+      ],
+      "* 18 - sam_model": [
+        "435:1",
+        0
+      ],
+      "* 19 - segm_detector": [
+        "435:2",
+        1
+      ]
+    },
+    "class_type": "MarasitAnyBusNode",
+    "_meta": {
+      "title": "∞"
+    }
+  },
+  "672": {
+    "inputs": {
+      "signal": [
+        "85",
+        0
+      ],
+      "any_input": [
+        "590",
         0
       ]
     },
-    "class_type": "BNK_CLIPTextEncodeAdvanced",
+    "class_type": "ImpactIfNone",
     "_meta": {
-      "title": "CLIP Text Encode (Adv) +"
+      "title": "C1"
     }
   },
-  "1649:6": {
+  "687": {
     "inputs": {
-      "text": [
-        "1244",
+      "empty_cache": false,
+      "gc_collect": false,
+      "unload_all_models": true,
+      "any_input": [
+        "707:0",
         0
       ],
-      "token_normalization": "none",
-      "weight_interpretation": "A1111",
-      "clip": [
-        "1649:3",
+      "image_pass": [
+        "707:1",
+        0
+      ],
+      "model_pass": [
+        "664",
+        1
+      ]
+    },
+    "class_type": "VRAM_Debug",
+    "_meta": {
+      "title": "VRAM Debug"
+    }
+  },
+  "709": {
+    "inputs": {
+      "_mode": "basic",
+      "_delimiter": ", ",
+      "0:INT": [
+        "687",
+        3
+      ],
+      "1:INT": [
+        "687",
+        4
+      ]
+    },
+    "class_type": "0246.Stringify",
+    "_meta": {
+      "title": "Str"
+    }
+  },
+  "711": {
+    "inputs": {
+      "output": "",
+      "source": [
+        "709",
         0
       ]
     },
-    "class_type": "BNK_CLIPTextEncodeAdvanced",
+    "class_type": "Display Any (rgthree)",
     "_meta": {
-      "title": "CLIP Text Encode (Adv) -"
+      "title": "<"
     }
   },
-  "1649:7": {
+  "712": {
     "inputs": {
-      "steps_total": 25,
-      "refiner_step": 10,
-      "cfg": 7,
-      "sampler_name": "dpmpp_2m",
-      "scheduler": "karras"
+      "signal": [
+        "86",
+        0
+      ],
+      "any_input": [
+        "129",
+        2
+      ]
     },
-    "class_type": "KSampler Config (rgthree)",
+    "class_type": "ImpactIfNone",
     "_meta": {
-      "title": "KSampler Config (rgthree)"
+      "title": "ImpactIfNone"
     }
   },
-  "1649:8": {
+  "435:0": {
     "inputs": {
-      "width": 910,
-      "height": 768,
-      "aspect_ratio": "2:1 cinema 1024x512",
-      "swap_dimensions": "Off",
-      "upscale_factor": 0.5,
-      "batch_size": 1
+      "model_name": "bbox/face_yolov8n_v2.pt"
     },
-    "class_type": "CR SD1.5 Aspect Ratio",
+    "class_type": "UltralyticsDetectorProvider",
     "_meta": {
-      "title": "🔳 CR SD1.5 Aspect Ratio"
+      "title": "UltralyticsDetectorProvider"
     }
   },
-  "1649:9": {
+  "435:1": {
     "inputs": {
       "model_name": "sam_vit_b_01ec64.pth",
       "device_mode": "Prefer GPU"
@@ -482,285 +560,186 @@
       "title": "SAMLoader (Impact)"
     }
   },
-  "1649:10": {
+  "435:2": {
     "inputs": {
-      "model_name": "RealESRGAN_x2plus.pth"
-    },
-    "class_type": "UpscaleModelLoader",
-    "_meta": {
-      "title": "Load Upscale Model"
-    }
-  },
-  "1424:0": {
-    "inputs": {
-      "seed": [
-        "1507",
-        0
-      ],
-      "model": [
-        "1649:0",
-        0
-      ],
-      "pos": [
-        "1649:5",
-        0
-      ],
-      "neg": [
-        "1649:6",
-        0
-      ],
-      "latent": [
-        "1649:8",
-        4
-      ],
-      "vae": [
-        "1649:2",
-        0
-      ]
-    },
-    "class_type": "CR Module Pipe Loader",
-    "_meta": {
-      "title": "CR|"
-    }
-  },
-  "1424:1": {
-    "inputs": {
-      "any_1": [
-        "1649:7",
-        0
-      ],
-      "any_2": [
-        "1649:7",
-        1
-      ],
-      "any_3": [
-        "1649:7",
-        2
-      ],
-      "any_4": [
-        "1649:9",
-        0
-      ],
-      "any_5": [
-        "1569:1",
-        0
-      ],
-      "any_6": [
-        "1569:0",
-        0
-      ]
-    },
-    "class_type": "Pipe to/edit any [Crystools]",
-    "_meta": {
-      "title": "|Set"
-    }
-  },
-  "1426:0": {
-    "inputs": {
-      "pipe": [
-        "1424:0",
-        0
-      ]
-    },
-    "class_type": "CR Module Input",
-    "_meta": {
-      "title": "CR|"
-    }
-  },
-  "1426:1": {
-    "inputs": {
-      "CPipeAny": [
-        "1424:1",
-        0
-      ]
-    },
-    "class_type": "Pipe from any [Crystools]",
-    "_meta": {
-      "title": "|Set"
-    }
-  },
-  "1427:0": {
-    "inputs": {
-      "pipe": [
-        "1424:0",
-        0
-      ]
-    },
-    "class_type": "CR Module Input",
-    "_meta": {
-      "title": "CR|"
-    }
-  },
-  "1427:1": {
-    "inputs": {
-      "CPipeAny": [
-        "1426:1",
-        0
-      ]
-    },
-    "class_type": "Pipe from any [Crystools]",
-    "_meta": {
-      "title": "|Set"
-    }
-  },
-  "1427:2": {
-    "inputs": {
-      "model_name": "bbox/hand_yolov8n.pt"
+      "model_name": "segm/face_yolov8n-seg2_60.pt"
     },
     "class_type": "UltralyticsDetectorProvider",
     "_meta": {
-      "title": "BBOX"
+      "title": "UltralyticsDetectorProvider"
     }
   },
-  "1427:3": {
+  "595:0": {
     "inputs": {
-      "model_name": "segm/deepfashion2_yolov8s-seg.pt"
+      "steps_total": 25,
+      "refiner_step": 10,
+      "cfg": 5,
+      "sampler_name": "euler",
+      "scheduler": "normal"
     },
-    "class_type": "UltralyticsDetectorProvider",
+    "class_type": "KSampler Config (rgthree)",
     "_meta": {
-      "title": "SEGM"
+      "title": "KSampler Config (rgthree)"
     }
   },
-  "1467:0": {
+  "595:1": {
     "inputs": {
-      "seed": 320423036694399,
-      "steps": [
-        "1426:1",
+      "width": 1024,
+      "height": 1025,
+      "aspect_ratio": "SDXL - 21:9 landscape 1536x640",
+      "swap_dimensions": "Off",
+      "upscale_factor": 2,
+      "prescale_factor": 1,
+      "batch_size": 1
+    },
+    "class_type": "CR Aspect Ratio",
+    "_meta": {
+      "title": "🔳 CR Aspect Ratio"
+    }
+  },
+  "708:0": {
+    "inputs": {
+      "value": [
+        "129",
         1
-      ],
-      "cfg": [
-        "1426:1",
-        3
-      ],
-      "sampler_name": "dpmpp_2m",
-      "scheduler": "karras",
-      "denoise": 1,
-      "noise_mode": "GPU(=A1111)",
-      "batch_seed_mode": "comfy",
-      "variation_seed": [
-        "1649:4",
+      ]
+    },
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "708:1": {
+    "inputs": {
+      "value": [
+        "90",
         0
-      ],
-      "variation_strength": 0.01,
-      "model": [
-        "1426:0",
-        1
-      ],
-      "positive": [
-        "1426:0",
-        2
-      ],
-      "negative": [
-        "1426:0",
-        3
-      ],
-      "latent_image": [
-        "1426:0",
+      ]
+    },
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "460:0": {
+    "inputs": {
+      "positive": "",
+      "negative": "",
+      "conditioner": "SDXL",
+      "width": 1024,
+      "height": 1024,
+      "clip": [
+        "708:0",
+        0
+      ]
+    },
+    "class_type": "CLIP +/- w/Text Unified (WLSH)",
+    "_meta": {
+      "title": "CLIP +/- w/Text Unified (WLSH)"
+    }
+  },
+  "460:1": {
+    "inputs": {},
+    "class_type": "ImpactDummyInput",
+    "_meta": {
+      "title": "ImpactDummyInput"
+    }
+  },
+  "652:0": {
+    "inputs": {
+      "value": [
+        "430",
         4
       ]
     },
-    "class_type": "KSampler //Inspire",
+    "class_type": "ReroutePrimitive|pysssss",
     "_meta": {
-      "title": "KSampler (inspire)"
+      "title": "Reroute Primitive 🐍"
     }
   },
-  "1467:1": {
+  "652:1": {
     "inputs": {
-      "tiled": false,
-      "circular": false,
-      "samples": [
-        "1467:0",
+      "value": [
+        "240",
+        1
+      ]
+    },
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "652:2": {
+    "inputs": {
+      "value": [
+        "687",
+        2
+      ]
+    },
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "652:3": {
+    "inputs": {},
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "652:4": {
+    "inputs": {},
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "652:5": {
+    "inputs": {},
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "707:0": {
+    "inputs": {
+      "value": [
+        "206",
+        0
+      ]
+    },
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "707:1": {
+    "inputs": {
+      "value": [
+        "484",
+        0
+      ]
+    },
+    "class_type": "ReroutePrimitive|pysssss",
+    "_meta": {
+      "title": "Reroute Primitive 🐍"
+    }
+  },
+  "707:2": {
+    "inputs": {
+      "signal": [
+        "707:1",
         0
       ],
-      "vae": [
-        "1426:0",
-        5
-      ]
-    },
-    "class_type": "CR VAE Decode",
-    "_meta": {
-      "title": "CRVAE"
-    }
-  },
-  "1428:0": {
-    "inputs": {
-      "pipe": [
-        "1427:0",
+      "any_input": [
+        "430",
         0
       ]
     },
-    "class_type": "CR Module Input",
+    "class_type": "ImpactIfNone",
     "_meta": {
-      "title": "CR|"
-    }
-  },
-  "1428:1": {
-    "inputs": {
-      "CPipeAny": [
-        "1427:1",
-        0
-      ]
-    },
-    "class_type": "Pipe from any [Crystools]",
-    "_meta": {
-      "title": "|Set"
-    }
-  },
-  "1428:2": {
-    "inputs": {
-      "model_name": "bbox/face_yolov8n_v2.pt"
-    },
-    "class_type": "UltralyticsDetectorProvider",
-    "_meta": {
-      "title": "BBOX"
-    }
-  },
-  "1428:3": {
-    "inputs": {
-      "model_name": "segm/person_yolov8n-seg.pt"
-    },
-    "class_type": "UltralyticsDetectorProvider",
-    "_meta": {
-      "title": "SEGM"
-    }
-  },
-  "1498:0": {
-    "inputs": {
-      "input_image": [
-        "312",
-        0
-      ],
-      "mask_1": [
-        "312",
-        3
-      ],
-      "mask_2": [
-        "839",
-        3
-      ]
-    },
-    "class_type": "CombineSegMasks",
-    "_meta": {
-      "title": "CombineSegMasks"
-    }
-  },
-  "1498:1": {
-    "inputs": {
-      "mask_opacity": 0.5,
-      "mask_color": "0, 255, 255",
-      "pass_through": false,
-      "image": [
-        "839",
-        0
-      ],
-      "mask": [
-        "1498:0",
-        0
-      ]
-    },
-    "class_type": "ImageAndMaskPreview",
-    "_meta": {
-      "title": "Image & Mask Preview"
+      "title": "ImpactIfNone"
     }
   }
 }
