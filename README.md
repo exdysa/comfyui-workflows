@@ -14,15 +14,14 @@ Low VRAM Stable Diffusion Workflows
 * Organized, easy to rewire
 * Reliable on 4GB VRAM
 
-![∞ // a screenshot of the workflow ](https://github.com/exdysa/comfyui-workflows/assets/91800957/d197945d-9156-4163-8f20-bf96ed03af81)
-
-![∞ // a screenshot of the wiring diagram](https://github.com/exdysa/comfyui-workflows/assets/91800957/00221691-9ce3-412c-8819-ad86f1886ac6)
-
-![∞ // a screenshot of the layer below the first](https://github.com/exdysa/comfyui-workflows/assets/91800957/ecf54596-bede-402b-8339-4a786eadf051)
+![∞ // a screenshot of the workflow ](https://github.com/exdysa/comfyui-workflows/assets/91800957/0821f0e5-59ac-4f45-ad5c-1001137c4f49)
+![∞ // a screenshot of the wiring diagram](https://github.com/exdysa/comfyui-workflows/assets/91800957/07e2047d-ca63-421f-b63f-570fc75a2037)
+![∞ // a screenshot of the layer below the first](https://github.com/exdysa/comfyui-workflows/assets/91800957/f1d4dc92-478c-4010-be11-1f947a048d53)
+![∞ // the image result of the completed workflow](https://github.com/exdysa/comfyui-workflows/assets/91800957/e6321518-23c9-46ca-ba74-0fc8186f3b29)
 
 <details>
   <summary> Expand for list of required custom nodes: </summary>
-  
+
   -  [ltdrdata Impact](https://github.com/ltdrdata/ComfyUI-Impact-Pack) and [Inspire](https://github.com/ltdrdata/ComfyUI-Inspire-Pack) - detailers, prompt builder, globalsampler, ifnone
   - [rgthree comfy](https://github.com/rgthree/rgthree-comfy) - bookmarks, bypasser, ksampler config, display any
   - [pythongosssss Custom Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts) custom colors, pipes, primitives
