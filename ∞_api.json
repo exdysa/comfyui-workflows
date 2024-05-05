@@ -23,8 +23,8 @@
         "664",
         10
       ],
-      "sampler_name": "euler_dy",
-      "scheduler": "normal",
+      "sampler_name": "uni_pc",
+      "scheduler": "karras",
       "width": [
         "664",
         13
@@ -51,7 +51,11 @@
       "save_metadata_file": false,
       "extra_info": "∞ ˶𝞢⤬⫒ⵖsᐼ˶ ⠑⠭⠙⠽⠎⠁",
       "images": [
-        "240",
+        "707:2",
+        0
+      ],
+      "lora_name": [
+        "660",
         0
       ]
     },
@@ -62,7 +66,7 @@
   },
   "76": {
     "inputs": {
-      "sampler_name": "euler_dy",
+      "sampler_name": "uni_pc",
       "scheduler": "karras"
     },
     "class_type": "GlobalSampler //Inspire",
@@ -106,7 +110,7 @@
     "inputs": {
       "category": "Angle of View",
       "preset": "#PRESET",
-      "text": "<lora:xl\\vegart_pytorch_lora_weights.safetensors:2.0>, <lora:detail\\add-detail-xl.safetensors:1.0>, (Yayoi Kusama:1.0), in a living woods thick with mossy roots and fireflies magical energy rises as a pale-blue crane ghost wanders only in a reflection, (mirror recursion:1.4), surrealism, disorienting, moon, gently rippling water, upside-down,"
+      "text": "<lora:xl\\add-detail-xl.safetensors:1.0>, macro photography, a dewy leaf inhabited by a city"
     },
     "class_type": "PromptBuilder //Inspire",
     "_meta": {
@@ -115,7 +119,7 @@
   },
   "129": {
     "inputs": {
-      "ckpt_name": "xl\\segmind-vega.safetensors"
+      "ckpt_name": "xl\\SSD-1B.safetensors"
     },
     "class_type": "Checkpoint Loader w/Name (WLSH)",
     "_meta": {
@@ -137,13 +141,10 @@
         "664",
         10
       ],
-      "sampler_name": "euler_dy",
+      "sampler_name": "uni_pc",
       "scheduler": "karras",
       "start_at_step": 0,
-      "end_at_step": [
-        "664",
-        8
-      ],
+      "end_at_step": 10000,
       "noise_mode": "GPU(=A1111)",
       "return_with_leftover_noise": false,
       "batch_seed_mode": "incremental",
@@ -171,28 +172,6 @@
       "title": "KSamplerAdv (inspire)"
     }
   },
-  "240": {
-    "inputs": {
-      "upscale_model": "RealESRGAN_x4plus_anime_6B.pth",
-      "mode": "rescale",
-      "rescale_factor": [
-        "664",
-        15
-      ],
-      "resize_width": 1024,
-      "resampling_method": "lanczos",
-      "supersample": "false",
-      "rounding_modulus": 8,
-      "image": [
-        "707:2",
-        0
-      ]
-    },
-    "class_type": "CR Upscale Image",
-    "_meta": {
-      "title": "CR Upscale"
-    }
-  },
   "295": {
     "inputs": {
       "mode": "always",
@@ -206,88 +185,6 @@
     "class_type": "PlaySound|pysssss",
     "_meta": {
       "title": "PlaySound         🐍"
-    }
-  },
-  "430": {
-    "inputs": {
-      "guide_size": 376,
-      "guide_size_for": true,
-      "max_size": 1024,
-      "seed": [
-        "660",
-        0
-      ],
-      "steps": [
-        "664",
-        9
-      ],
-      "cfg": [
-        "664",
-        10
-      ],
-      "sampler_name": "euler_dy",
-      "scheduler": "normal",
-      "denoise": 0.5,
-      "feather": 4,
-      "noise_mask": false,
-      "force_inpaint": true,
-      "bbox_threshold": 0.5,
-      "bbox_dilation": 10,
-      "bbox_crop_factor": 3,
-      "sam_detection_hint": "center-1",
-      "sam_dilation": 0,
-      "sam_threshold": 0.93,
-      "sam_bbox_expansion": 0,
-      "sam_mask_hint_threshold": 0.7,
-      "sam_mask_hint_use_negative": "False",
-      "drop_size": 11,
-      "wildcard": [
-        "664",
-        16
-      ],
-      "cycle": 1,
-      "inpaint_model": true,
-      "noise_mask_feather": 19,
-      "image": [
-        "707:1",
-        0
-      ],
-      "model": [
-        "664",
-        1
-      ],
-      "clip": [
-        "664",
-        2
-      ],
-      "vae": [
-        "664",
-        4
-      ],
-      "positive": [
-        "664",
-        6
-      ],
-      "negative": [
-        "664",
-        7
-      ],
-      "bbox_detector": [
-        "664",
-        17
-      ],
-      "sam_model_opt": [
-        "664",
-        18
-      ],
-      "segm_detector_opt": [
-        "664",
-        19
-      ]
-    },
-    "class_type": "FaceDetailer",
-    "_meta": {
-      "title": "FaceDetailer"
     }
   },
   "484": {
@@ -330,36 +227,9 @@
       "title": "VAENamer"
     }
   },
-  "582": {
-    "inputs": {
-      "text": ""
-    },
-    "class_type": "CR Text",
-    "_meta": {
-      "title": "FD Wildcard"
-    }
-  },
-  "590": {
-    "inputs": {
-      "text": [
-        "708:1",
-        0
-      ],
-      "token_normalization": "none",
-      "weight_interpretation": "comfy",
-      "clip": [
-        "708:0",
-        0
-      ]
-    },
-    "class_type": "BNK_CLIPTextEncodeAdvanced",
-    "_meta": {
-      "title": "CLIP 1.5+"
-    }
-  },
   "660": {
     "inputs": {
-      "val": "3853238821",
+      "val": "3347209787",
       "min": 1000000000,
       "max": 9999999999,
       "batch_size": 1,
@@ -432,22 +302,6 @@
       "* 15 - upscale_factor": [
         "595:1",
         2
-      ],
-      "* 16 - text": [
-        "582",
-        0
-      ],
-      "* 17 - bbox_detector": [
-        "435:0",
-        0
-      ],
-      "* 18 - sam_model": [
-        "435:1",
-        0
-      ],
-      "* 19 - segm_detector": [
-        "435:2",
-        1
       ]
     },
     "class_type": "MarasitAnyBusNode",
@@ -460,10 +314,6 @@
       "signal": [
         "85",
         0
-      ],
-      "any_input": [
-        "590",
-        0
       ]
     },
     "class_type": "ImpactIfNone",
@@ -474,7 +324,7 @@
   "687": {
     "inputs": {
       "empty_cache": false,
-      "gc_collect": false,
+      "gc_collect": true,
       "unload_all_models": true,
       "any_input": [
         "707:0",
@@ -528,52 +378,24 @@
   "712": {
     "inputs": {
       "signal": [
-        "86",
-        0
-      ],
-      "any_input": [
         "129",
         2
+      ],
+      "any_input": [
+        "86",
+        0
       ]
     },
     "class_type": "ImpactIfNone",
     "_meta": {
-      "title": "ImpactIfNone"
-    }
-  },
-  "435:0": {
-    "inputs": {
-      "model_name": "bbox/face_yolov8n_v2.pt"
-    },
-    "class_type": "UltralyticsDetectorProvider",
-    "_meta": {
-      "title": "UltralyticsDetectorProvider"
-    }
-  },
-  "435:1": {
-    "inputs": {
-      "model_name": "sam_vit_b_01ec64.pth",
-      "device_mode": "Prefer GPU"
-    },
-    "class_type": "SAMLoader",
-    "_meta": {
-      "title": "SAMLoader (Impact)"
-    }
-  },
-  "435:2": {
-    "inputs": {
-      "model_name": "segm/face_yolov8n-seg2_60.pt"
-    },
-    "class_type": "UltralyticsDetectorProvider",
-    "_meta": {
-      "title": "UltralyticsDetectorProvider"
+      "title": "C2"
     }
   },
   "595:0": {
     "inputs": {
-      "steps_total": 25,
+      "steps_total": 20,
       "refiner_step": 10,
-      "cfg": 5,
+      "cfg": 4,
       "sampler_name": "euler",
       "scheduler": "normal"
     },
@@ -585,8 +407,8 @@
   "595:1": {
     "inputs": {
       "width": 1024,
-      "height": 1025,
-      "aspect_ratio": "SDXL - 21:9 landscape 1536x640",
+      "height": 1024,
+      "aspect_ratio": "SDXL - 3:2 landscape 1216x832",
       "swap_dimensions": "Off",
       "upscale_factor": 2,
       "prescale_factor": 1,
@@ -646,24 +468,14 @@
     }
   },
   "652:0": {
-    "inputs": {
-      "value": [
-        "430",
-        4
-      ]
-    },
+    "inputs": {},
     "class_type": "ReroutePrimitive|pysssss",
     "_meta": {
       "title": "Reroute Primitive 🐍"
     }
   },
   "652:1": {
-    "inputs": {
-      "value": [
-        "240",
-        1
-      ]
-    },
+    "inputs": {},
     "class_type": "ReroutePrimitive|pysssss",
     "_meta": {
       "title": "Reroute Primitive 🐍"
@@ -730,10 +542,6 @@
     "inputs": {
       "signal": [
         "707:1",
-        0
-      ],
-      "any_input": [
-        "430",
         0
       ]
     },
