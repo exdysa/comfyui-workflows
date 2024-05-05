@@ -7,7 +7,7 @@ Low VRAM Stable Diffusion Workflows
 * Three-dimensional z-index layout
 * Automatic Hand/Face inpainting and Upscale
 * Fits comfortably within one screen at 1080 resolution
-* View Switching - `~1234` Keys navigate to important settings
+* View Switching - `~123` Keys navigate to important settings
 * Full Screen Preview
 * Precision Seed Variation Control
 * Mid-process VRAM management
