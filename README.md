@@ -1,6 +1,6 @@
 # comfyui-workflows
 
->Low VRAM Stable Diffusion Workflows
+>Low VRAM Stable Diffusion Workflows for [ComfyUI](https://github.com/comfyanonymous/comfyui)
 
 # [∞ / infinity ](/%E2%88%9E.json)
 > - [x] Support Stable Diffusion XL Distilled and 1.5
