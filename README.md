@@ -39,7 +39,7 @@ Txt2Img & Img2Img.
 >  - [x] Stable Cascade support
 
  
-# [∞ / infinity ](infinity/workflow ∞(1).json)
+# [∞ / infinity ](infinity/workflow%20%E2%88%9E(1).json)
 > - [x] Support Stable Diffusion XL Distilled and 1.5
 > - [x] Three-dimensional z-index layout
 > - [x] Automatic Hand/Face inpainting and Upscale
